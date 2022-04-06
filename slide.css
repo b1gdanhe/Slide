@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgb(22, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  max-width: 899px;
+  overflow: hidden;
+}
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide 5s infinite;
+}
+.image {
+  position: relative;
+}
+.image p {
+  width: 100%;
+  position: absolute;
+  top: 70%;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  33% {
+    transform: translateX(-899px);
+  }
+  66% {
+    transform: translateX(-1798px);
+  }
+  100% {
+    transform: translateX(-2697px);
+  }
+}
